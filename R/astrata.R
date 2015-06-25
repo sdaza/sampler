@@ -12,8 +12,8 @@
 #' @param cl Confidence level, e.g., .95
 #' @param relative Logical parameter. Estimate a relative error if TRUE.
 #' @examples
-#' ssize(e = 0.)
-astrata <- function(samplesize, N, method  = "mixed", min = 1, wp = 1, e = NULL, deff = 1, rr = 1, p = 0.5) { 
+#' astrata(1000, c(200, 300, 500))
+astrata <- function(samplesize, N, method = "mixed", min = 1, wp = 1, e = NULL, deff = 1, rr = 1, p = 0.5) { 
  
   # checks   
   if (length(p) > 1 & (length(N) != length(p))) {
@@ -25,7 +25,6 @@ astrata <- function(samplesize, N, method  = "mixed", min = 1, wp = 1, e = NULL,
   }
 
 
-  
   if (method == "error") {
   
   if (is.null(e)) {

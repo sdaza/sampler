@@ -1,2 +1,2 @@
 # sampler
-Package to estimate margin of errors and sample sizes for a proportion.
+Package to estimate margins of error (MOE) and sample sizes for a proportion.

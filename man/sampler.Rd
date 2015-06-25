@@ -4,14 +4,14 @@
 \name{sampler}
 \alias{sampler}
 \alias{sampler-package}
-\title{sampler: A simple package to estimate MOEs and sample sizes.}
+\title{sampler: A simple package to compute margins of error (MOE) and sample sizes.}
 \description{
-Functions to estimate MOEs and sample sizes for a proportion includig different design options.
+Functions to estimate MOEs and sample sizes for a proportion with different design options.
 }
 \details{
 \itemize{
   \item Version: 0.01
-  \item Date: 2015-04-24
+  \item Date: 2015-04-25
   \item URL: \url{http://github.com/sdaza/sampler}
 }
 }
@@ -21,8 +21,7 @@ Functions to estimate MOEs and sample sizes for a proportion includig different 
 \itemize{
   \item \code{\link{ssize}}: Compute sample sizes.
   \item \code{\link{serr}}: Compute margin of error (MOE).
-  \item \code{\link{astrata}}: Function to assign strata's sample sizes using different procedures.
-  \item \code{\link{serrst}}: Function to compute margin of error for a stratifed sample.
+  \item \code{\link{astrata}}: Function to assign strata sample sizes.
   \item \code{\link{serrst}}: Function to compute margin of error for a stratifed sample.
 }
 }

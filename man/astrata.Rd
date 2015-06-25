@@ -34,6 +34,6 @@ astrata(samplesize, N, method = "mixed", min = 1, wp = 1, e = NULL,
 This function allocates sample size to strata using different methods.
 }
 \examples{
-ssize(e = 0.)
+astrata(1000, c(200, 300, 500))
 }
 
