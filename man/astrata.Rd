@@ -12,7 +12,14 @@ astrata(samplesize, N, method = "mixed", min = 1, wp = 1, e = NULL,
 
 \item{N}{Population size. If the population size is not specified, MOEs are estimated using the infinite population formula.}
 
-\item{method}{The allocation can be assigned using different methods. The default method is mixed}
+\item{method}{The allocation can be assigned using different methods. The default method is \strong{mixed}.
+\itemize{
+  \item \strong{mixed}: Combine same size (equal sample size by stratum) and proportional allociations. It needs to specify the weigth of the assignation through \code{wp}. If \code{wp = 1} (default value), the strata allocation is proportional. If \code{wp = 0}, the strata allocation is equal. If \code{wp} is any number between 0 and 1, the strata allocation will be the corresponding combination between same size and proportionality across strata.
+  \item \strong{error}: The sample size of strata is defined based on a given margin of error. \code{e} needs to be specified.
+  \item \strong{neyman}: The sample size of strata is defined based on a given margin of error. \code{e} needs to be specified.
+  \item \strong{root}: The sample size of strata is defined based on a given margin of error. \code{e} needs to be specified.
+  \item \strong{stdev}: The sample size of strata is defined based on a given margin of error. \code{e} needs to be specified.
+}}
 
 \item{min}{Minimum sample size by strata. Default is 1.}
 
