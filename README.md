@@ -10,6 +10,6 @@ library(sampler)
 
 You have to install `devtools` in R first!
 
-### How to use?
+### How to use i?
 
-`?sampler`
+`?sampler` and [sebadaza.com](http://sebadaza.com/)
