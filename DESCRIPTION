@@ -6,6 +6,6 @@ Date: 2015-06-25
 Author: Sebastian Daza <sdaza@ssc.wisc.edu>
 Maintainer: Sebastian Daza <sdaza@ssc.wisc.edu>
 Description: This package includes functions to compute margins of error and sample sizes for a proportion considering response rates, design effects, and stratum allocation.
-License: What license is it under?
+License: GPL-2
 LazyData: true
 URL: http://github.com/sdaza/acsr
