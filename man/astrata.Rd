@@ -14,14 +14,14 @@ astrata(samplesize, N, method = "mixed", min = 1, wp = 1, e = NULL,
 
 \item{method}{The allocation can be assigned using different methods. The default method is \strong{mixed}.
 \itemize{
-  \item \strong{mixed}: Combine same size (equal sample size by stratum) and proportional allociations. It needs to specify the weigth of the assignation through \code{wp}. If \code{wp = 1} (default value), the strata allocation is proportional. If \code{wp = 0}, the strata allocation is equal. If \code{wp} is any number between 0 and 1, the strata allocation will be the corresponding combination between same size and proportionality across strata.
-  \item \strong{error}: The sample size of strata is defined based on a given margin of error. \code{e} needs to be specified.
-  \item \strong{neyman}: The sample size of strata is defined based on a given margin of error. \code{e} needs to be specified.
-  \item \strong{root}: The sample size of strata is defined based on a given margin of error. \code{e} needs to be specified.
-  \item \strong{stdev}: The sample size of strata is defined based on a given margin of error. \code{e} needs to be specified.
+  \item \strong{mixed}: Combine equal size  across strata (equal sample size by stratum) and proportional allociation. It needs to specify the weight of the proportional assignation by \code{wp}. If \code{wp = 1} (default value), the strata allocation is proportional. If \code{wp = 0}, the strata allocation is equal. If \code{wp} is any number between 0 and 1, the strata allocation will be the corresponding combination between equal size and proportionality across strata.
+  \item \strong{error}: The sample size of strata is based on a margin of error. \code{e} needs to be specified.
+  \item \strong{neyman}: It uses Neyman allocation. It assigns sample units within each stratum proportional to the product of the population stratum size and the within-stratum standard deviation, so that minimum variance for a population mean estimator can be achieved.
+  \item \strong{root}: It proportionally assigns sample units using the square root of the population sizes.
+  \item \strong{stdev}: It assigns sample units proportional to the standard deviation across strata.
 }}
 
-\item{min}{Minimum sample size by strata. Default is 1.}
+\item{min}{Minimum expected sample size per stratum. Default is 1.}
 
 \item{wp}{Weight given to a proportional allocation. This is only need when method is mixed. If wp = 1 (default value), the strata allocation will be propotional. If wp = 0, the strata allocation will be equal.}
 
@@ -32,10 +32,6 @@ astrata(samplesize, N, method = "mixed", min = 1, wp = 1, e = NULL,
 \item{rr}{Value or vector of values of the expected response rate, it migth higher than 0 and lower than 1.}
 
 \item{p}{Value or vector of values with the proportion to be estimated by stratum.}
-
-\item{cl}{Confidence level, e.g., .95}
-
-\item{relative}{Logical parameter. Estimate a relative error if TRUE.}
 }
 \description{
 This function allocates sample size to strata using different methods.

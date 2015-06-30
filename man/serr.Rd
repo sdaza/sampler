@@ -18,13 +18,14 @@ serr(n, deff = 1, rr = 1, N = NULL, cl = 0.95, p = 0.5,
 
 \item{cl}{Confidence levels, e.g., .95}
 
+\item{p}{Value or vector of values with the expected proportion of each stratum.}
+
 \item{relative}{Logical parameter. Estimate a relative error if TRUE.}
 }
 \description{
 This function provides flexibility to estimate margins of errors for a proportion assuming different population sizes, confidence levels, design effects (DEff), response rates.
 }
 \examples{
-serr(n=400, deff=1.5, rr=.8, N=1000)
-serr(n=400, N=350)
+serr(n = 400, deff = 1.5, rr = .8, N = 1000)
 }
 

@@ -9,7 +9,7 @@
 #' \itemize{
 #'   \item \code{\link{ssize}}: Compute sample sizes.
 #'   \item \code{\link{serr}}: Compute margin of error (MOE).
-#'   \item \code{\link{astrata}}: Function to assign strata sample sizes.
+#'   \item \code{\link{astrata}}: Function to assign sample sizes to strata.
 #'   \item \code{\link{serrst}}: Function to compute margin of error for a stratifed sample.
 #' }
 #'

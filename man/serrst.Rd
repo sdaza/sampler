@@ -4,7 +4,8 @@
 \alias{serrst}
 \title{Estimation of margins of errors (MOEs) for a proportion in a stratified sample}
 \usage{
-serrst(n, N = NULL, W = NULL, deff = 1, rr = 1, p = 0.5, cl = 0.95)
+serrst(n, N = NULL, W = NULL, deff = 1, rr = 1, p = 0.5, cl = 0.95,
+  relative = FALSE)
 }
 \arguments{
 \item{n}{Vector of sample size of each stratum.}
@@ -16,6 +17,8 @@ serrst(n, N = NULL, W = NULL, deff = 1, rr = 1, p = 0.5, cl = 0.95)
 \item{deff}{A value or vector of values with design effects (DEff) provided from previous studies.}
 
 \item{rr}{Proportion representing expected response rate, it migth be 0 or more, and less than 1.}
+
+\item{p}{Value or vector of values with the expected proportion of each stratum.}
 
 \item{cl}{Confidence levels, e.g., .95}
 

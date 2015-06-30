@@ -17,7 +17,7 @@ ssize(e, deff = 1, rr = 1, N = NULL, cl = 0.95, p = 0.5)
 
 \item{cl}{Confidence levels, e.g., .95}
 
-\item{relative}{Logical parameter. Estimate a relative error if TRUE.}
+\item{p}{Value or vector of values with the expected proportion.}
 }
 \description{
 This function provides flexibility to estimate margins of errors for a proportion assuming different population sizes, confidence levels, design effects (DEff) and response rates.

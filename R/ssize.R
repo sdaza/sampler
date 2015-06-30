@@ -4,8 +4,8 @@
 #' @param deff Design effect (DEff) provided from previous estimations (e.g., 1.5).
 #' @param rr Proportion representing expected response rate, it migth higher than 0 and lower than 1.
 #' @param N Population size. If the population size is not specified, MOEs are estimated using the infinite population formula.
+#' @param p Value or vector of values with the expected proportion.
 #' @param cl Confidence levels, e.g., .95
-#' @param relative Logical parameter. Estimate a relative error if TRUE.
 #' @examples
 #' ssize(e = 0.02, deff = 1.5, rr = .8, N = 1000)
 #' ssize(e = 0.05)

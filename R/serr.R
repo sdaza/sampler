@@ -1,14 +1,14 @@
 #' @title Estimation of margins of errors (MOEs) for a proportion
 #' @description This function provides flexibility to estimate margins of errors for a proportion assuming different population sizes, confidence levels, design effects (DEff), response rates. 
 #' @param n Size of the sample.
+#' @param p Value or vector of values with the expected proportion of each stratum.
 #' @param deff Design effect (DEff) provided from previous studies or design estimations (e.g., 1.5).
 #' @param rr Proportion representing expected response rate, it migth be 0 or more, and less than 1.
 #' @param N Population size. If the population size is not specified, MOEs are estimated using the infinite population formula.
 #' @param cl Confidence levels, e.g., .95
 #' @param relative Logical parameter. Estimate a relative error if TRUE.
 #' @examples
-#' serr(n=400, deff=1.5, rr=.8, N=1000)
-#' serr(n=400, N=350)
+#' serr(n = 400, deff = 1.5, rr = .8, N = 1000)
 serr <- function(n, deff = 1, rr = 1, N = NULL, cl = .95, p = 0.5, relative = FALSE)  {
  
 # validation
@@ -59,8 +59,8 @@ else  {
  
   }
  
-  if (relative==TRUE) {
-  return(round(e/p, digits=4))
+  if (relative == TRUE) {
+  return(round(e / p, digits = 4))
   }
  
   else {
