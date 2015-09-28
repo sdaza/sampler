@@ -1,11 +1,11 @@
 Package: sampler
 Type: Package
-Title: Functions to estimate margins of error (MOE) and sample sizes for a proportion
+Title: Functions to Estimate Margins of Error (MOE) and Sample Sizes for a Proportion
 Version: 0.01
 Date: 2015-06-25
 Author: Sebastian Daza <sdaza@ssc.wisc.edu>
 Maintainer: Sebastian Daza <sdaza@ssc.wisc.edu>
-Description: This package includes functions to compute margins of error and sample sizes for a proportion considering response rates, design effects, and stratum allocation.
+Description: Functions to compute margins of error and sample sizes for a proportion considering response rates, design effects, and stratum allocation.
 License: GPL-2
 LazyData: true
 URL: http://github.com/sdaza/acsr

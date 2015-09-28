@@ -1,9 +1,9 @@
 #' @title Estimation of sample sizes for a proportion
-#' @description This function provides flexibility to estimate margins of errors for a proportion assuming different population sizes, confidence levels, design effects (DEff) and response rates. 
+#' @description This function provides flexibility to estimate margins of errors of a proportion assuming different population sizes, confidence levels, design effects (DEff), and response rates. 
 #' @param e Expected margin of error.
-#' @param deff Design effect (DEff) provided from previous estimations (e.g., 1.5).
+#' @param deff Design effect (DEff). Generally, from studies and estimations. Values should be higher than 0. 
 #' @param rr Proportion representing expected response rate, it migth higher than 0 and lower than 1.
-#' @param N Population size. If the population size is not specified, MOEs are estimated using the infinite population formula.
+#' @param N Population size. If the population size is not specified, MOEs are estimated using an infinite population formula.
 #' @param p Value or vector of values with the expected proportion.
 #' @param cl Confidence levels, e.g., .95
 #' @examples
@@ -35,7 +35,7 @@ ssize <- function(e, deff = 1, rr = 1, N = NULL, cl = .95, p = 0.5)  {
  
     n <- (z ^ 2 * ( p * ( 1 - p ))) / ( e ^ 2 )
     n <- (((n * N)/(n + ( N - 1))) * deff) / rr
-    n <- round(n, digits=0)
+    n <- round(n, digits = 0)
  
      }
  

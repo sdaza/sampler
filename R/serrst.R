@@ -31,7 +31,7 @@ if (!is.null(W) & length(W) != length(n)) {
 
 
 # definition of z and q
-z <- round(abs(qnorm((1 - cl)/2)),2)
+z <- round(abs(qnorm((1 - cl) / 2)), 2)
 q <- 1 - p
  
 # definition of weigths and factor of correction

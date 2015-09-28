@@ -1,4 +1,4 @@
-#' sampler: A simple package to compute margins of error (MOE) and sample sizes.
+#' sampler: A Simple Package to Compute Margins of Error (MOE) and Sample Sizes.
 #'
 #' @description Functions to estimate MOEs and sample sizes for a proportion with different design options.
 #'

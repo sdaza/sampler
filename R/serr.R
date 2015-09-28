@@ -25,10 +25,10 @@ if (sum(rr<=0)>=1) {
   stop("rr should be bigger than 0")
 }
  
-z <- round(abs(qnorm(( 1 - cl)/2)),3)
+# get z value 
+z <- round(abs(qnorm(( 1 - cl)/2)), 2)
  
-# computation of sampling error
- 
+# computation of sampling error 
 if (is.null(N)) {
  
   n <- (n/deff)*rr
