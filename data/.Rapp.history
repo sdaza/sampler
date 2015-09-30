@@ -1,0 +1,4 @@
+load("/Users/sdaza/Dropbox/github/Packages/sampler/data/chile.RData")
+ls()
+cl = .95
+z
