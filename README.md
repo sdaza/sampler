@@ -12,4 +12,4 @@ You have to install `devtools` in R first!
 
 ### How to use i?
 
-`?sampler` and [sdaza.com](http://sdaza.com/)
+`?sampler` and [sdaza.com](http://sdaza.com/survey/2015/09/30/sampler/)
